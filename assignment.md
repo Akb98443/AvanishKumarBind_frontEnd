@@ -44,9 +44,10 @@ like this :
           index={index}
           isSelected={selectedIndex}
         />
-      ```
+ ```
 Here isSelected it type of bool so code should be like this
-      ```
+      
+ ```
 <SingleListItem
           onClickHandler={() => handleClick(index)}
           text={item.text}
@@ -61,10 +62,11 @@ WrappedListComponent.propTypes = {
     text: PropTypes.string.isRequired,
   })),
 }; 
-      ```
+```
 
 In the above given code there is such function shapeOf the correct code for this is below : 
-      ```
+      
+ ```
 WrappedListComponent.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({
   text: PropTypes.string.isRequired,
